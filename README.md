@@ -22,3 +22,5 @@ After finishing the input, when the prompt in the command line shows "Category (
 -- Output --
 A pie chart will be drawn based on the current fruit types and quantities.
 If you enter the same fruit type at different times (even with a 1-second difference), it will be displayed as separate segments in the pie chart because the input time is different.
+
+Demo video link : https://youtu.be/8YHxl3BaLP4
