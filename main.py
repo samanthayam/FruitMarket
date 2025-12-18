@@ -1,7 +1,19 @@
+from datetime import datetime
 import matplotlib.pyplot as plt
+
+# 資料儲存
+fruit = {}
 
 plt.ion()  # interactive mode for live updates
 
+while True:
+    time_now = datetime.now().strftime("%m/%d %H:%M:%S")
+    category = input("Category (q to quit) : ")
+    if category.lower() == "q":
+        break
+
+    amount = int(input("Amount : "))
+    fruit[f"{category} - {time_now}"] = amount
     print("\nCurrent Entries:")
     for k, v in fruit.items():
         print(f"{k}: ${v}")
